@@ -1,4 +1,4 @@
-/* Copyright 2018 Streampunk Media Ltd.
+﻿/* Copyright 2018 Streampunk Media Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -119,7 +119,7 @@ void tidyCarrier(napi_env env, carrier* c) {
   delete c;
 }
 
-int32_t rejectStatus(napi_env env, carrier* c, char* file, int32_t line) {
+int32_t rejectStatus(napi_env env, carrier* c, const char * file, int32_t line) {
   if (c->status != GRANDIOSE_SUCCESS) {
     napi_value errorValue, errorCode, errorMsg;
     napi_status status;

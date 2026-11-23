@@ -1,4 +1,4 @@
-/* Copyright 2018 Streampunk Media Ltd.
+﻿/* Copyright 2018 Streampunk Media Ltd.
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -725,7 +725,7 @@ void audioReceiveComplete(napi_env env, napi_status asyncStatus, void *data)
 }
 
 napi_value dataAndAudioReceive(napi_env env, napi_callback_info info,
-                               char *resourceName, napi_async_execute_callback execute,
+                               const char *resourceName, napi_async_execute_callback execute,
                                napi_async_complete_callback complete)
 {
   napi_valuetype type;
